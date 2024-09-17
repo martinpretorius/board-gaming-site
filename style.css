@@ -118,6 +118,7 @@ body {
       #3e0275 33%,
       #2f1f6f 59%);
   height: 100vh;
+  width: 100vw;
 }
 
 .section1-gamer-img {
@@ -422,6 +423,12 @@ header {
     background-position: bottom;
   } */
 
+  .section1-container-radial-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .section1-gamer-img {
     display: none;
   }
@@ -438,9 +445,12 @@ header {
     background-position: bottom;
     height: 92vh; */
 
-    height: 100%;
     padding-top: 2.56em;
     padding-bottom: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
 
   .section1-gamer-fill-color {
@@ -448,12 +458,15 @@ header {
     background-color: #2F1F6F;
     height: 445px;
     margin: 0 -1.94em;
+    width: 100vw;
   }
 
   .section1-gamer-img-mobile {
+    /* display: flex; */
     background-image: url('assets/images/vr-gamer-mobile-cropped3.png');
-    background-size: cover;
+    /* background-size: cover; */
     mix-blend-mode: color-dodge;
+    background-repeat: no-repeat;
     /* margin: 0 -1.94em; */
     /* margin-top: -10px; */
     height: 445px;
@@ -554,6 +567,7 @@ header {
     backdrop-filter: blur(25px);
     left: -50%;
     top: -3em;
+    overflow: hidden;
   }
 
   .ribbon-option {
