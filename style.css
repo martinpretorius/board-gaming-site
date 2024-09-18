@@ -1099,7 +1099,7 @@ header {
     display: flex;
     align-items: center;
     gap: 0.8em;
-    margin-top: 0.4em;
+    /* margin-top: 0.4em; */
   }
 
   .user-info-mobile {
@@ -1124,6 +1124,7 @@ header {
     width: 100%;
     padding: 0.8em 1.5em;
     margin-top: 0.4em;
+    margin-bottom: 1.2em;
   }
 
   .card-btn-mobile>span {
