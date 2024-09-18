@@ -573,13 +573,13 @@ header {
 
 .section3-cards-container {
   /* max-width: 800px; */
-  width: 77.5em;
+  max-width: 77.5em;
   line-height: 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   /* border: 2px solid; */
-  gap: 1.3em;
+  gap: 1.5em;
   margin-bottom: 6em;
 }
 
@@ -654,6 +654,7 @@ header {
 .card-btn {
   width: 100%;
   padding: 1.2em 2.5em;
+  margin-bottom: 1.9em;
 }
 
 .card-btn>span {
@@ -662,6 +663,120 @@ header {
 
 .section3-cards-container-mobile {
   display: none;
+}
+
+/*********************************************/
+/* Section 4 */
+/*********************************************/
+
+.section4-container-mobile {
+  display: none;
+}
+
+.section4-container {
+  max-width: 77.5em;
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section4-card-bg {
+  width: 50%;
+  position: relative;
+}
+
+.section4-card-bookmark {
+  position: absolute;
+  top: -2.5em;
+  right: 2.5em;
+  width: 6em;
+}
+
+.section4-card {
+  border: 1px solid pink;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 0.5em;
+  color: white;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.section4-card-text {
+  font-size: 0.8em;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  margin-bottom: 0.9em;
+}
+
+.section4-user-info-outer-container {
+  margin-top: 0.9em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section4-user-info-container {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.section4-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.section4-user-name {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.section4-user-company {
+  font-size: 0.7em;
+}
+
+.section4-verified {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.section4-verfied-text {
+  position: relative;
+  top: -2px;
+  font-size: 0.9em;
+}
+
+.stars-container {
+  display: flex;
+  gap: 2px;
+  margin-bottom: -0.4em;
+}
+
+.star {
+  width: 1.25em;
+  aspect-ratio: 1;
+  background: white;
+  clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+  /* clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))); */
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+
+.section4-slider-controls {
+  margin: auto;
 }
 
 /*********************************************/
@@ -1130,5 +1245,130 @@ header {
   .card-btn-mobile>span {
     font-size: 1em;
     letter-spacing: 1px;
+  }
+
+  /*********************************************/
+  /* Section 4 */
+  /*********************************************/
+
+  .section4-container {
+    display: none;
+  }
+
+  .section4-container-mobile {
+    display: block;
+    max-width: 20em;
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section4-container-mobile .section4-card-bg {
+    width: 100%;
+    position: relative;
+  }
+
+  .section4-container-mobile .section4-card-bookmark {
+    position: absolute;
+    top: -1.5em;
+    right: 1.5em;
+    width: 4em;
+  }
+
+  .section4-container-mobile .section4-card {
+    border: 1px solid pink;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0.5em;
+    color: white;
+    font-family: 'Lato', Arial, sans-serif;
+  }
+
+  .section4-container-mobile .section4-card-text {
+    font-size: 0.8em;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin-bottom: 0.9em;
+    text-align: center;
+  }
+
+  .section4-container-mobile .section4-user-info-outer-container {
+    margin-top: 0.9em;
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section4-container-mobile .section4-user-info-container {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+  }
+
+  .section4-container-mobile .section4-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+
+  .section4-container-mobile .section4-user-name {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  .section4-container-mobile .section4-user-company {
+    font-size: 0.5em;
+  }
+
+  .section4-container-mobile .section4-verified {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+
+  .section4-container-mobile .section4-verfied-text {
+    position: relative;
+    top: -1px;
+    font-size: 0.65em;
+  }
+
+  .section4-container-mobile .verified-icon {
+    width: 1.2em;
+    color: white;
+  }
+
+  .section4-container-mobile .stars-container {
+    display: flex;
+    gap: 2px;
+    margin-bottom: -0.4em;
+    justify-content: center;
+    margin-top: 0.8em;
+  }
+
+  .section4-container-mobile .star {
+    width: 1.25em;
+    aspect-ratio: 1;
+    background: white;
+    clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+    /* clip-path: polygon(50% 0,
+        calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+        calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+        calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+        calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))); */
+    /* or more simple
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+     */
+  }
+
+  .section4-slider-controls img {
+    width: 7em;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
   }
 }
