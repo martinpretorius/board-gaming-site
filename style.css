@@ -402,7 +402,7 @@ nav li:hover {
   width: 77.5em;
   height: 34.75em;
   border-radius: 0.5em;
-  border: 2px solid palevioletred;
+  border: 2px solid pink;
   background-color: white;
   opacity: 0.1;
   backdrop-filter: blur(25px);
@@ -534,7 +534,7 @@ nav li:hover {
   border-radius: 0.5em;
   position: relative;
   z-index: 0;
-  border: 1px solid lightslategrey;
+  border: 1px solid pink;
   margin-bottom: 1em;
 }
 
@@ -1112,10 +1112,6 @@ footer {
     padding-right: 0;
   }
 
-  .section3-play-now-btn {
-    box-shadow: 1px 1000px 1px #44367E inset;
-  }
-
   .section3-ribbon {
     height: 3.11em;
     gap: 0.1em;
@@ -1152,10 +1148,6 @@ footer {
     margin-top: 2em;
     width: 180%;
     padding-left: 1.9em;
-  }
-
-  .section3-btns .play-now-btn {
-    box-shadow: 1px 1000px 1px #3A0A73 inset;
   }
 
   .section3-btn>span {
@@ -1349,6 +1341,10 @@ footer {
   .section4-slider-controls img {
     width: 7em;
     margin-top: 0.5em;
+  }
+
+  .play-now-btn {
+    border: 1px solid pink;
   }
 
   /*********************************************/
