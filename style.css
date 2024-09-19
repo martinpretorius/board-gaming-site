@@ -973,7 +973,6 @@ footer {
   .section3-btns {
     display: flex;
     gap: 0.7em;
-    z-index: 1000;
     position: relative;
     justify-content: center;
     position: relative;
