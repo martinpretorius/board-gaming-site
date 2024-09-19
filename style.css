@@ -195,6 +195,12 @@ nav li {
   list-style-type: none;
   font-size: 1.125rem;
   font-family: 'Lato', Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li:hover {
+  /* font-weight: bold; */
+  transform: translateY(-3px);
 }
 
 .navicon {
@@ -224,7 +230,8 @@ header {
 
 }
 
-.gradient-text {
+.gradient-text,
+nav li:hover {
   background: linear-gradient(to right, #6542f4 32%, #f976ff 52%, #b50098 86%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -364,6 +371,25 @@ header {
 .section1-ribbon-star {
   width: 1.25em;
 }
+
+.ticker {
+  animation: marquee 15s linear infinite;
+  display: flex;
+  padding-left: calc(100% - 24px);
+  margin-left: 0px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
 
 /*********************************************/
 /* Section 2 */
